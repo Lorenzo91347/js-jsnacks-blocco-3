@@ -14,8 +14,11 @@ const n10 = parseInt(prompt('inserisci un numero'));
 
 //somma dei numeri
 
-const sum = n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10;
-
+let nums = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10];
+let sum = 0;
+for (let i = 0; i < nums.length; i++) {
+    sum += nums[i];
+};
 //risultato finale
 
 console.log(sum);
